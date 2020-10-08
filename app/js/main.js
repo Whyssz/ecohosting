@@ -18,7 +18,7 @@ $(function () {
     function backToTop(){
         let button = $('.btn__to-top');
         $(window).on('scroll', () => {
-            if ($(this).scrollTop() >= 800){
+            if ($(this).scrollTop() >= 900){
                 button.fadeIn();
             }else{
                 button.fadeOut();
@@ -33,7 +33,7 @@ $(function () {
     function menuFixed(){
         let menu  = $('.header');
         $(window).on('scroll', () => {
-            if ($(this).scrollTop() >= 800){
+            if ($(this).scrollTop() >= 1100){
                 menu.addClass('fixed')
             }else{
                 menu.removeClass('fixed')
@@ -45,6 +45,9 @@ $(function () {
 
     $(window).on('load', () => {
         $('#log-reg').vide('./video/video-bg');
+    });
+    $(function() {
+        $('.input-file').styler();
     });
     // $('.icon-th-list').on('click', function () {
     //     $('.product__item').addClass('list')

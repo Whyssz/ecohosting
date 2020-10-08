@@ -118,13 +118,14 @@
     .header-down{
       opacity: 1;
       height: auto;
-      padding: 10px;
+      padding: 10px 0;
     }
   }
 }
 .header-down{
   transition: all .3s ease-out;
   opacity: 0;
+  overflow: hidden;
   height: 0;
   padding: 0;
   width: 170px;
@@ -135,16 +136,17 @@
     width: 100%;
   }
   a{
+    margin: 0;
     color: #fff !important;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 20px;
     font-size: 14px;
     transition: all .3s ease-out;
     &:after{
       display: none;
     }
     &:hover{
-      margin: 0 20px;
+      margin: 0 10px;
     }
   }
 }
@@ -273,6 +275,11 @@
       outline: none;
       padding: 9px 33px 9px 76px;
       position: relative;
+      &::placeholder{
+        font-size: 18px;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 400;
+      }
     }
   }
   button{
@@ -362,7 +369,7 @@
 // end possibilities
 //start cart
 .cart{
-  padding: 70px 0;
+  padding: 200px 0 70px;
   position: relative;
   &:after{
     position: absolute;
@@ -370,7 +377,7 @@
     content: "";
     border-top: 72px solid #2D0A31;
     border-left: 1920px solid #fff;
-    border-bottom: 450px solid #fff;
+    border-bottom: 520px solid #fff;
     left: 0;
     z-index: -11;
     right: 0;
@@ -879,9 +886,168 @@
   font-weight: 600;
 }
 // end login
-//start register
+//start packages
+.packages-page{
+  padding: 200px 0 70px;
+}
+// end packages
+//start help
+.help{
+  padding: 200px 0 200px;
+  background-color: $bg;
+  text-align: center;
+  align-items: center;
+}
+.help__inner-title{
+  color: #fff;
+  text-transform: capitalize;
+  @include f700;
+  font-size: 44px;
+}
+.questions-help{
+  background-color: #fff;
+  &:before{
+    display: none;
+  }
+}
+.questions-help{
+  .questions-link{
+    margin: 0 auto;
+    text-align: center;
+    .buttons{
+      margin: 0 auto;
+      text-transform: lowercase;
+      text-decoration: underline;
+    }
+  }
+  .possibilities-title{
+    color: $bg;
+  }
+  .questions-link{
+    margin-top: 40px;
+  }
+  .questions-item{
+    .questions-item__title{
+      color: $bg;
 
-// end register
+    }
+    span{
+      color: $bg;
+    }
+  }
+}
+// end  help
+//start contact us
+.contact-us{
+  padding: 120px 0 100px;
+  background-color: #fff;
+}
+.contact-map{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.contact__inner-info{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-title{
+  width: 100%;
+  font-size: 27px;
+  color: #000;
+  margin-bottom: 30px;
+  @include f700;
+}
+.contact__form{
+  max-width: 770px;
+  width: 100%;
+  margin-right: 40px;
+  form>input{
+    width: 100%;
+  }
+  textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid #ececec;
+    outline: none;
+    height: 185px;
+    color: #c4c4c4;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 15px;
+    &::placeholder{
+      color: #c4c4c4;
+      font-size: 14px;
+    }
+  }
+  label{
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+    height: 48px;
+    color: #c4c4c4;
+    border: 1px solid #ececec;
+    width: 48%;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    &::placeholder{
+      color: #c4c4c4;
+      font-size: 14px;
+    }
+  }
+}
+.contact-form__btn{
+  display: block;
+  text-transform: uppercase;
+  color: $fil;
+  padding: 18px 44px;
+  border: 1px solid $fil;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .4s ease-out;
+  &:hover{
+    background-color: $fil;
+    color: #fff;
+  }
+}
+.contact-address__item{
+  max-width: 270px  ;
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.contact-item__img{
+  width: 44px;
+  height: 41px;
+  position: relative;
+  margin-right: 20px;
+  &:before{
+    font-size: 43px;
+    color: #c4c4c4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}
+.contact-item__info{
+  font-size: 16px;
+  color: #000;
+  line-height: 1.4;
+  span{
+    display: block;
+    font-size: 14px;
+    color: #8a8a8a;
+  }
+}
+// end  contact us
+//start blog-main
+
+// end  blog-main
 //start
 
 @import "media";
