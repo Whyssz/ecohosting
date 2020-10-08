@@ -32,3 +32,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+.icon-search:before {
+  content: "\f002";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-check-circle:before {
+  content: "\f058";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-chrome:before {
+  content: "\f268";
+}

@@ -1,7 +1,13 @@
-$text: #546e7a;
-
+$text: #A5A7C5;
+$fil: #F067FF;
+$bl: #9F78FF;
+$pink: #4C1E51;
 
 @mixin f500{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
+}
+@mixin f700{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
