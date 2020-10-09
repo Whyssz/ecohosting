@@ -25,11 +25,11 @@
                                     <li><a href="http://localhost:3000/index.html">Home</a></li>
                                     <li><a href="http://localhost:3000/packages.html">packages</a></li>
                                     <li><a href="http://localhost:3000/help.html">help</a></li>
-                                    <li class="header-list__down"><a href="#">blog</a>
+                                    <li class="header-list__down"><a href="http://localhost:3000/blog.html">blog</a>
                                         <ul class="header-down">
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Blog detail</a></li>
-                                            <li><a href="#">Element</a></li>
+                                            <li><a href="http://localhost:3000/blog.html">Blog</a></li>
+                                            <li><a href="http://localhost:3000/blog-detail.html">Blog detail</a></li>
+                                            <li><a href="http://localhost:3000/blog-element.html">Element</a></li>
                                         </ul>
                                     </li>
                                     <li><span>contact</span></li>
@@ -60,8 +60,16 @@
                                 <form>
                                     <textarea required placeholder="Enter message"></textarea>
                                     <label>
-                                        <input type="text" required placeholder="Enter your name">
-                                        <input type="email" required placeholder="Email">
+                                        <input type="text" list="name-list" required list placeholder="Enter your name">
+                                        <datalist id="name-list">
+                                            <option>Max</option>
+                                            <option>Dmitry</option>
+                                            <option>Leo</option>
+                                        </datalist>
+                                        <input list="email-list" type="email" required placeholder="Email">
+                                        <datalist id="email-list">
+                                            <option>support-ecohosting.com</option>
+                                        </datalist>
                                     </label>
                                     <input  type="text" placeholder="Enter Subject" required>
                                     <button class="contact-form__btn">send</button>
@@ -73,11 +81,11 @@
                                     <a class="contact-item__info" href="#">Buttonwood, California.<span>Rosemead, CA 91770</span></a>
                                 </div>
                                 <div class="contact-address__item">
-                                    <a class="contact-item__img icon-mobile" href="#"></a>
+                                    <a class="contact-item__img icon-mobile" href="tel:12535652365"></a>
                                     <a class="contact-item__info" href="tel:12535652365">+1 253 565 2365.<span>Mon to Fri 9am to 6pm</span></a>
                                 </div>
                                 <div class="contact-address__item">
-                                    <a class="contact-item__img icon-envelope-o" href="#"></a>
+                                    <a class="contact-item__img icon-envelope-o" href="mailto:support-ecohosting.com"></a>
                                     <a class="contact-item__info" href="mailto:support-ecohosting.com">support-ecohosting.com<span>Send us your query anytime!</span></a>
                                 </div>
                             </div>
