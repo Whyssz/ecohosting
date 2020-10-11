@@ -21,6 +21,9 @@ gulp.task('style', () => {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/magnific-popup/dist/magnific-popup.css',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        'node_modules/animate.css/animate.css',
         'node_modules/swiper/swiper-bundle.css'
     ])
         .pipe(concat('libs.min.css'))
@@ -31,6 +34,9 @@ gulp.task('script', () => {
     return gulp.src([
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
         'node_modules/vide/src/jquery.vide.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+        'node_modules/wow.js/dist/wow.js',
         'node_modules/swiper/swiper-bundle.js'
     ])
         .pipe(concat('libs.min.js'))

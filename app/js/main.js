@@ -49,6 +49,26 @@ $(function () {
     $(function() {
         $('.input-file').styler();
     });
+
+    $('[data-fancybox]').fancybox({
+        loop: true,
+        keyboard: true,
+        toolbar: true,
+        transitionEffect: "fade",
+        buttons: [
+            "slideShow",
+            "fullScreen",
+            "thumbs",
+            " slideShow ",
+            "close",
+        ]
+    });
+    $('select').styler();
+    function animateItem() {
+        new WOW().init();
+    }
+    animateItem();
+
     // $('.icon-th-list').on('click', function () {
     //     $('.product__item').addClass('list')
     //     $('.icon-th-large').removeClass('active')

@@ -9,6 +9,7 @@
   "author": "Shilov Dmitry",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -21,6 +22,10 @@
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "swiper": "^6.3.2",
-    "vide": "^0.5.1"
+    "vide": "^0.5.1",
+    "wow.js": "^1.2.2"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7"
   }
 }
