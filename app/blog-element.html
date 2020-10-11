@@ -13,6 +13,7 @@
 <body>
     <div class="wrapper">
         <div class="content">
+            <div id="preloader-loader" class="preloader"><div class="loader"></div><img src="images/loder.png" alt=""></div>
             <header class="header">
                 <div class="container-fluid">
                     <div class="header__inner">
@@ -21,6 +22,7 @@
                         </div>
                         <div class="header__inner-box">
                             <nav class="header__menu">
+                                <div class="header__menu-btn"></div>
                                 <ul class="menu-list">
                                     <li><a href="http://localhost:3000/index.html">Home</a></li>
                                     <li><a href="http://localhost:3000/packages.html">packages</a></li>
@@ -209,54 +211,57 @@
                     <div class="element-table">
                         <div class="element-title">Table</div>
                         <div class="element-table__inner">
-                            <ul class="table-list">
-                                <li class="table-num">#</li>
-                                <li class="table-count">COUNTRIES</li>
-                                <li class="table-visits">VISITS</li>
-                                <li class="table-percent">PERCENTAGES</li>
-                            </ul>
-                            <ul class="table-list table-list__pos1">
-                                <li class="table-num">01</li>
-                                <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
-                                <li class="table-visits">41545454</li>
-                                <li class="table-percent"><span style="max-width: 78%"></span></li>
-                            </ul>
-                            <ul class="table-list table-list__pos2">
-                                <li class="table-num">02</li>
-                                <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
-                                <li class="table-visits">41545454</li>
-                                <li class="table-percent"><span style="max-width: 64%"></span></li>
-                            </ul>
-                            <ul class="table-list table-list__pos3">
-                                <li class="table-num">03</li>
-                                <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
-                                <li class="table-visits">41545454</li>
-                                <li class="table-percent"><span style="max-width: 19%"></span></li>
-                            </ul>
-                            <ul class="table-list table-list__pos4">
-                                <li class="table-num">04</li>
-                                <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
-                                <li class="table-visits">41545454</li>
-                                <li class="table-percent"><span style="max-width: 30%"></span></li>
-                            </ul>
-                            <ul class="table-list table-list__pos5">
-                                <li class="table-num">05</li>
-                                <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
-                                <li class="table-visits">41545454</li>
-                                <li class="table-percent"><span style="max-width: 50%"></span></li>
-                            </ul>
-                            <ul class="table-list table-list__pos6">
-                                <li class="table-num">06</li>
-                                <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
-                                <li class="table-visits">41545454</li>
-                                <li class="table-percent"><span style="max-width: 78%"></span></li>
-                            </ul>
-                            <ul class="table-list table-list__pos7">
-                                <li class="table-num">07</li>
-                                <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
-                                <li class="table-visits">41545454</li>
-                                <li class="table-percent"><span style="max-width: 100%"></span></li>
-                            </ul>
+                            <div class="table-table">
+                                <ul class="table-list">
+                                    <li class="table-num">#</li>
+                                    <li class="table-count">COUNTRIES</li>
+                                    <li class="table-visits">VISITS</li>
+                                    <li class="table-percent">PERCENTAGES</li>
+                                </ul>
+                                <ul class="table-list table-list__pos1">
+                                    <li class="table-num">01</li>
+                                    <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
+                                    <li class="table-visits">41545454</li>
+                                    <li class="table-percent"><span style="max-width: 78%"></span></li>
+                                </ul>
+                                <ul class="table-list table-list__pos2">
+                                    <li class="table-num">02</li>
+                                    <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
+                                    <li class="table-visits">41545454</li>
+                                    <li class="table-percent"><span style="max-width: 64%"></span></li>
+                                </ul>
+                                <ul class="table-list table-list__pos3">
+                                    <li class="table-num">03</li>
+                                    <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
+                                    <li class="table-visits">41545454</li>
+                                    <li class="table-percent"><span style="max-width: 19%"></span></li>
+                                </ul>
+                                <ul class="table-list table-list__pos4">
+                                    <li class="table-num">04</li>
+                                    <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
+                                    <li class="table-visits">41545454</li>
+                                    <li class="table-percent"><span style="max-width: 30%"></span></li>
+                                </ul>
+                                <ul class="table-list table-list__pos5">
+                                    <li class="table-num">05</li>
+                                    <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
+                                    <li class="table-visits">41545454</li>
+                                    <li class="table-percent"><span style="max-width: 50%"></span></li>
+                                </ul>
+                                <ul class="table-list table-list__pos6">
+                                    <li class="table-num">06</li>
+                                    <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
+                                    <li class="table-visits">41545454</li>
+                                    <li class="table-percent"><span style="max-width: 78%"></span></li>
+                                </ul>
+                                <ul class="table-list table-list__pos7">
+                                    <li class="table-num">07</li>
+                                    <li class="table-count"><img src="images/blog/f1.jpg" alt="">Canada</li>
+                                    <li class="table-visits">41545454</li>
+                                    <li class="table-percent"><span style="max-width: 100%"></span></li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                     <div class="element-gallery">
@@ -363,7 +368,7 @@
                                 <label class="checkbox2">02. Radios<input class="label-check" type="checkbox" checked><span></span></label>
                                 <label class="checkbox3">03. Radios<input class="label-check" type="checkbox"><span></span></label>
                                 <label class="checkbox4">04. Radios<input class="label-check" type="checkbox" disabled><span></span></label>
-                                <label class="checkbox5">05. Radios<input class="label-check" type="checkbox" disabled ><span></span></label>
+                                <label class="checkbox5">05. Radios<input class="label-check" type="checkbox" disabled checked><span></span></label>
                             </div>
                         </div>
                     </div>
